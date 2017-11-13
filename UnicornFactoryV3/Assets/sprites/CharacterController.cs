@@ -32,9 +32,10 @@ public class CharacterController : MonoBehaviour
         //    IncreaseSpeed();
         //}
 
-       
+        KeyCode key = new KeyCode();
+        Input.GetKey(key);
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (key == KeyCode.D)
         {
             speed = 5f;
             anim.SetFloat("speed", speed);
@@ -69,6 +70,15 @@ public class CharacterController : MonoBehaviour
 
 
         }
+        else
+            if(Input.GetKeyUp(KeyCode.E))
+            {
+            HabilityScript hab = GetComponent<HabilityScript>();
+            hab.BoltOfOlympus();
+            Debug.Log("Bolt Of Olympus Activated");
+
+
+            }
 
 
         float move = Input.GetAxis("Horizontal");
