@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class Health
 {
-    private const float ORIGINAL_HEALTHBAR_SIZE = 2.446577f;
-    private int amountofHP;
-    public int AmountOfHp
+    private Vector3 originalHealthBarScale = new Vector3(2.080382f, 0.2002107f);
+
+
+    private float amountofHP;
+    public float AmountOfHp
     {
         get { return amountofHP; }
         set { amountofHP = value; }
@@ -20,12 +22,15 @@ public class Health : MonoBehaviour
         set { enemyHealthBar = value; }
 
     }
-
+    
     public Health(Transform enemyHealthBar)
     {
-        AmountOfHp = 100;
-        this.enemyHealthBar = enemyHealthBar;
         
+        this.enemyHealthBar = enemyHealthBar;
+        this.enemyHealthBar.localScale = originalHealthBarScale;
+        //AmountOfHp = 100; //primary inicialization
+        AmountOfHp = 20;//temporary debug inicialization
+
     }
 
     // Use this for initialization
@@ -41,17 +46,21 @@ public class Health : MonoBehaviour
 
     }
 
-    public void OnHit()
+    public Transform OnHit()
     {
+        
+        amountofHP-=10;
+        //float newScale = enemyHealthBar.localScale.x - originalHealthBarScale.x/10;
+        float newHealthScale = (amountofHP / 100)*originalHealthBarScale.x;
+        enemyHealthBar.localScale = new Vector3(newHealthScale, enemyHealthBar.localScale.y);
+        //if (amountofHP <=0)
+        //{
+        //    EnemyKilled();
+        //    return null;
+        //}
+        return enemyHealthBar;
+      
 
-        amountofHP--;
-        float newScale = enemyHealthBar.localScale.x - ORIGINAL_HEALTHBAR_SIZE/10;
-        enemyHealthBar.transform.localScale = new Vector3(newScale, enemyHealthBar.localScale.y);
-        if (amountofHP == 90)
-        {
-            EnemyKilled();
-            return;
-        }
         
     }
 

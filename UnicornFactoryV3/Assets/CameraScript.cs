@@ -22,7 +22,7 @@ public class CameraScript : MonoBehaviour
     {
 
 
-        player = GameObject.Find("Character");
+        player = GameObject.Find("sampleHero");
         playerTrans = player.GetComponent<Transform>();
         transform.position = new Vector3(playerTrans.position.x, playerTrans.position.y, transform.position.z);
 
