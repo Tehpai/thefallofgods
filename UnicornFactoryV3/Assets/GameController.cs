@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Classes;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,12 @@ public class GameController : MonoBehaviour {
     public GameObject hero; // debugging variable
     Vector3 newHeroPosition; // debugging variable
     bool heroBeingMoved;
+
+    public Transform debugBgTrans;
+
+    Hero hero2;
+
+    public UiController uiScript;
 
     EnemyList enemyList;
     Camera mainCameraController;
@@ -22,9 +29,12 @@ public class GameController : MonoBehaviour {
         enemyList.AddEnemyToScene();
         enemyList.AddEnemyToScene();
 
-
+        //hero2 = new Hero();
+        
+        
         newHeroPosition = new Vector3(hero.transform.position.x, hero.transform.position.y);
         heroBeingMoved = false;
+
 
     }
 	
@@ -40,8 +50,11 @@ public class GameController : MonoBehaviour {
         if (enemyList.enemies.Count == 0 && !heroBeingMoved)
         {
             AdvanceToNextWave();
+            uiScript.stage.Finished = true;
             newHeroPosition.x = hero.transform.position.x + 11;
+            enemyList.StartingPosition = newHeroPosition;
             heroBeingMoved = true;
+            
 
         }
         if (heroBeingMoved)
@@ -82,6 +95,7 @@ public class GameController : MonoBehaviour {
         Rigidbody2D heroRigid = hero.GetComponent<Rigidbody2D>();
         heroRigid.velocity = new Vector2(5f, heroRigid.velocity.y);
         //heroRigid.velocity = 5f * (heroRigid.velocity.normalized);
+
 
 
         //enemyList.AddEnemyToScene();

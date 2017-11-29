@@ -7,12 +7,19 @@ public class EnemyList
 
     public List<Enemy> enemies;
     private Vector3 startingPosition;
+    public Vector3 StartingPosition
+    {
+        get;
+        set;
+    }
+    GameObject hero;
 
     
 
     public EnemyList()
     {
-        startingPosition = new Vector3(28.2f, -0.5f);
+        hero = GameObject.Find("sampleHero");
+        startingPosition = new Vector3(hero.transform.position.x + 5, hero.transform.position.y);
         enemies = new List<Enemy>();
     }
     // Use this for initialization
@@ -31,9 +38,16 @@ public class EnemyList
 
     void PositionEnemies()
     {
-        for (int cnt = 0; cnt < enemies.Count; cnt++)
+        Vector2 positionIncrement = new Vector2(1, 2);
+        bool xCoordAdjust = false;
+        for (int cnt = 0; cnt < enemies.Count; cnt++, xCoordAdjust = !xCoordAdjust)
         {
-            enemies[cnt].EnemyP.transform.position = new Vector3(startingPosition.x + (cnt * 3), startingPosition.y);
+            
+            enemies[cnt].EnemyP.transform.position = new Vector3(startingPosition.x + positionIncrement.x, startingPosition.y + (cnt*positionIncrement.y));
+            if (xCoordAdjust)
+                positionIncrement.x = 1;
+            else
+                positionIncrement.x = -1;
         }
     }
     void PositionEnemies(Vector3 spawnPoint)
@@ -54,7 +68,7 @@ public class EnemyList
     {
         Vector3 newEnemySpawn = new Vector3(spawnPoint.x + 3, spawnPoint.y);
         enemies.Add(new Enemy("enemy prefab"));
-        PositionEnemies(newEnemySpawn);
+        PositionEnemies(startingPosition);
     }
 
     public void DamageEnemies(DamageTypeEnum.DamageTypes enumDamage)
