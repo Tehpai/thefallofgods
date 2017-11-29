@@ -7,7 +7,7 @@ public class EnemyAIScript : MonoBehaviour {
     GameObject player;
     float speed = 0f; //velocidade do inimigo
     Rigidbody2D enemyRigid;
-    bool facingRight;
+    //bool facingRight;
                      
     void Start () {
 

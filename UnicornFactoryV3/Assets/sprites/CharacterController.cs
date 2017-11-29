@@ -7,7 +7,7 @@ public class CharacterController : MonoBehaviour
 
     Rigidbody2D character;
     float speed = 0f; //velocidade da personagem
-    float speedfct = 0.2f;
+    //float speedfct = 0.2f;
     Animator anim;
     Vector3 scale;
     bool facingRight = false;

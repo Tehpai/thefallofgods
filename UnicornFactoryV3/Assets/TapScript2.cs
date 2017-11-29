@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class TapScript2 : MonoBehaviour {
 
     GameObject[] enemies; // old instance of enemy
-    GameObject[] healthBars;
-    GameObject healthBar;
+    //GameObject[] healthBars;
+    //GameObject healthBar;
     int health;
-    Text tmptxt;
+    //Text tmptxt;
     List<Health> hp;
     List<Enemy> enemies2 = new List<Enemy>(); // new instance of enemy
 
@@ -40,7 +40,7 @@ public class TapScript2 : MonoBehaviour {
     {
 
 
-        int cnt = 0;
+        //int cnt = 0;
         foreach (Enemy en in enemies2)
         {
 

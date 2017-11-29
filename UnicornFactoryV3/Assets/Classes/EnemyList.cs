@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,8 +10,15 @@ public class EnemyList
     private Vector3 startingPosition;
     public Vector3 StartingPosition
     {
-        get;
-        set;
+        get
+        {
+            return startingPosition;
+        }
+        set
+        {
+            startingPosition = value;
+        }
+        
     }
     GameObject hero;
 
@@ -19,7 +27,7 @@ public class EnemyList
     public EnemyList()
     {
         hero = GameObject.Find("sampleHero");
-        startingPosition = new Vector3(hero.transform.position.x + 5, hero.transform.position.y);
+        StartingPosition = new Vector3(hero.transform.position.x + 5, hero.transform.position.y);
         enemies = new List<Enemy>();
     }
     // Use this for initialization
@@ -43,20 +51,26 @@ public class EnemyList
         for (int cnt = 0; cnt < enemies.Count; cnt++, xCoordAdjust = !xCoordAdjust)
         {
             
-            enemies[cnt].EnemyP.transform.position = new Vector3(startingPosition.x + positionIncrement.x, startingPosition.y + (cnt*positionIncrement.y));
+            enemies[cnt].EnemyP.transform.position = new Vector3(StartingPosition.x + positionIncrement.x, StartingPosition.y + (cnt*positionIncrement.y));
             if (xCoordAdjust)
                 positionIncrement.x = 1;
             else
                 positionIncrement.x = -1;
         }
     }
-    void PositionEnemies(Vector3 spawnPoint)
-    {
-        for (int cnt = 0; cnt < enemies.Count; cnt++)
-        {
-            enemies[cnt].EnemyP.transform.position = new Vector3(spawnPoint.x + (cnt * 3), spawnPoint.y);
-        }
-    }
+    //void PositionEnemies(Vector3 spawnPoint)
+    //{
+    //    bool xCoordAdjust = false;
+    //    for (int cnt = 0; cnt < enemies.Count; cnt++, xCoordAdjust = !xCoordAdjust)
+    //    {
+
+    //        enemies[cnt].EnemyP.transform.position = new Vector3(StartingPosition.x + positionIncrement.x, StartingPosition.y + (cnt * positionIncrement.y));
+    //        if (xCoordAdjust)
+    //            positionIncrement.x = 1;
+    //        else
+    //            positionIncrement.x = -1;
+    //    }
+    //}
 
     public void AddEnemyToScene()
     {
@@ -65,10 +79,13 @@ public class EnemyList
         PositionEnemies();
     }
     public void AddEnemyToScene(Vector3 spawnPoint)
-    {
-        Vector3 newEnemySpawn = new Vector3(spawnPoint.x + 3, spawnPoint.y);
+    { 
+        
+        Vector3 newEnemySpawn = new Vector3(spawnPoint.x + 5, spawnPoint.y);
+        if (newEnemySpawn.x > startingPosition.x)
+            StartingPosition = newEnemySpawn;
         enemies.Add(new Enemy("enemy prefab"));
-        PositionEnemies(startingPosition);
+        PositionEnemies();
     }
 
     public void DamageEnemies(DamageTypeEnum.DamageTypes enumDamage)
@@ -106,7 +123,7 @@ public class EnemyList
             if (enumDamage == DamageTypeEnum.DamageTypes.Single_RandomTarget_Damage)
         {
             
-            int randEnemyidx = Random.Range(0, enemies.Count);
+            int randEnemyidx = UnityEngine.Random.Range(0, enemies.Count);
             
 
             foreach (Transform child in enemies[randEnemyidx].EnemyP.GetComponentInChildren<Transform>())

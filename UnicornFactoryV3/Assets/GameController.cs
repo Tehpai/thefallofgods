@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour {
 
     public Transform debugBgTrans;
 
-    Hero hero2;
+    //Hero hero2;
 
     public UiController uiScript;
 
@@ -25,9 +25,9 @@ public class GameController : MonoBehaviour {
 
         enemyList = new EnemyList();
 
-        enemyList.AddEnemyToScene();
-        enemyList.AddEnemyToScene();
-        enemyList.AddEnemyToScene();
+        enemyList.AddEnemyToScene(hero.transform.position);
+        enemyList.AddEnemyToScene(hero.transform.position);
+        enemyList.AddEnemyToScene(hero.transform.position);
 
         //hero2 = new Hero();
         

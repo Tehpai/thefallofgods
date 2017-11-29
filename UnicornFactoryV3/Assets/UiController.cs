@@ -10,11 +10,13 @@ public class UiController : MonoBehaviour
     GameObject mainUi;
     public Stage stage;
 
+    public SpriteRenderer bgSprender;
+
     // Use this for initialization
     void Start()
     {
         mainUi = GameObject.FindGameObjectWithTag("mainui");
-        stage = new Stage(mainUi);
+        stage = new Stage(mainUi,bgSprender);
     }
 
     // Update is called once per frame
@@ -22,6 +24,7 @@ public class UiController : MonoBehaviour
     {
         if (stage.Finished)
         {
+            
             stage.NextRound();
             stage.Finished = false;
         }
