@@ -1,5 +1,6 @@
 ﻿//using Assets.Classes;
 using Assets.Classes;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,21 +8,26 @@ using UnityEngine;
 public class UiController : MonoBehaviour
 {
 
-    GameObject mainUi;
+    public GameObject mainUi;
     public Stage stage;
+    public Camera MainCamera;
 
-    public SpriteRenderer bgSprender;
+    public String bgPrefab;
+
+    public int stageCount;
 
     // Use this for initialization
     void Start()
     {
-        mainUi = GameObject.FindGameObjectWithTag("mainui");
-        stage = new Stage(mainUi,bgSprender);
+        stageCount = 1;
+        stage = new Stage(mainUi, "backgroundf");
+
     }
 
     // Update is called once per frame
     void Update()
     {
+       
         if (stage.Finished)
         {
             

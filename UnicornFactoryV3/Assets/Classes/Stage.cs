@@ -10,7 +10,12 @@ namespace Assets.Classes
     public class Stage
     {
 
-        public SpriteRenderer bgSprender;
+        public String bgPrefab;
+        public GameObject bgObject;
+        
+        public List<GameObject> bgManager;
+
+        public float bgIncrement;
         //GameObject stageUi;
         GameObject mainUi;
         //private bool finished;
@@ -19,14 +24,35 @@ namespace Assets.Classes
             get;
             set;
         }
-        private float initBgPos;
+        //private float initBgPos;
 
-        public Stage(GameObject mainUi,SpriteRenderer bgSprender)
+        public Stage(GameObject mainUi, String bgPrefab)
         {
+            bgIncrement = 10.38f;
             this.mainUi = mainUi;
+            bgManager = new List<GameObject>();
 
-            this.bgSprender = bgSprender;
+            this.bgPrefab = bgPrefab;
+
+            bgObject = ((GameObject)Resources.Load(bgPrefab));
+            bgManager.Add(MonoBehaviour.Instantiate(bgObject,mainUi.transform));
+            bgManager.Add(MonoBehaviour.Instantiate(bgObject, mainUi.transform));
+            bgManager.Add(MonoBehaviour.Instantiate(bgObject, mainUi.transform));
+
+            float bgloopTmpIdx = -(bgIncrement);
+            foreach(GameObject g in bgManager)
+            {
+                //g.transform.SetParent(mainUi.transform, false);
+                g.transform.position = new Vector3(g.transform.position.x + bgloopTmpIdx, g.transform.position.y, g.transform.position.z);
+                bgloopTmpIdx += bgIncrement;
+            }
+
+           
+
+
             
+            //bgManager[1].transform.position = new Vector3(bgObjecttmp.transform.position.x + bgIncrement, bgObjecttmp.transform.position.y, bgObjecttmp.transform.position.z);
+
 
             //foreach (SpriteRenderer sprender in mainUi.GetComponentsInChildren<SpriteRenderer>())
             //{
@@ -34,7 +60,7 @@ namespace Assets.Classes
             //    {
             //        bgSprender = sprender;
             //        initBgPos = bgSprender.transform.position.x;
-                    
+
 
 
             //    }
@@ -59,11 +85,16 @@ namespace Assets.Classes
                 
                 stage.text = (int.Parse(stage.text) + 1).ToString();
 
-                GameObject bg2 = (GameObject)Resources.Load("background2");
-                
-                //bg2 = UnityEditor.PrefabUtility.InstantiatePrefab(bg2);
+                //GameObject bg2 = MonoBehaviour.Instantiate((GameObject)Resources.Load("background2"));
 
-                bgSprender.transform.position = new Vector3(bgSprender.transform.position.x + 11, bgSprender.transform.position.y,bgSprender.transform.position.z);
+
+                float bgloopTmpIdx = -(bgIncrement)*2;
+                foreach (GameObject g in bgManager)
+                {
+                    g.transform.SetParent(mainUi.transform, false);
+                    g.transform.position = new Vector3(g.transform.position.x + bgIncrement, g.transform.position.y, g.transform.position.z);
+                    bgloopTmpIdx += bgIncrement;
+                }
 
             }
             catch (Exception e)

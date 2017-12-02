@@ -17,11 +17,18 @@ public class GameController : MonoBehaviour {
     public UiController uiScript;
 
     EnemyList enemyList;
+
     Camera mainCameraController;
+    Vector3 difHeroCamera;
+
+
     // Use this for initialization
     void Start () {
 
         mainCameraController = GameObject.Find("Main Camera").GetComponent<Camera>();
+        difHeroCamera = new Vector3(Math.Abs(uiScript.MainCamera.transform.position.x - hero.transform.position.x), Math.Abs(uiScript.MainCamera.transform.position.y - hero.transform.position.y));
+        CameraScript.difHeroCamera = difHeroCamera;
+
 
         enemyList = new EnemyList();
 
@@ -59,13 +66,19 @@ public class GameController : MonoBehaviour {
         }
         if (heroBeingMoved)
         {
+            
+
             Rigidbody2D heroRigid = hero.GetComponent<Rigidbody2D>();
             heroRigid.velocity = heroRigid.velocity.normalized * 5f;
 
-            if (Math.Abs(Vector3.Distance(hero.transform.position,newHeroPosition)) > 1)
-                return;
+            if (Math.Abs(Vector3.Distance(hero.transform.position, newHeroPosition)) > 0.5)
+            {
+                
+            }
             else
             {
+                //uiScript.stage.bgObjecttmp.transform.position = new Vector3(uiScript.stage.bgObjecttmp.transform.position.x + uiScript.stage.bgIncrement, uiScript.stage.bgObjecttmp.transform.position.y, uiScript.stage.bgObjecttmp.transform.position.z);
+
                 heroRigid = hero.GetComponent<Rigidbody2D>();
                 heroRigid.velocity = new Vector2(0f, heroRigid.velocity.y);
                 heroBeingMoved = false;
@@ -73,6 +86,7 @@ public class GameController : MonoBehaviour {
                 enemyList.AddEnemyToScene(hero.transform.position);
                 enemyList.AddEnemyToScene(hero.transform.position);
                 enemyList.AddEnemyToScene(hero.transform.position);
+
 
             }
         }
@@ -84,7 +98,7 @@ public class GameController : MonoBehaviour {
         {
             if (Input.GetMouseButtonUp(0))
             {
-                enemyList.DamageEnemies(DamageTypeEnum.DamageTypes.Global_Damage);
+                enemyList.DamageEnemies(DamageTypeEnum.DamageTypes.Single_RandomTarget_Damage);
             }
         }
     }
@@ -94,6 +108,8 @@ public class GameController : MonoBehaviour {
         
         Rigidbody2D heroRigid = hero.GetComponent<Rigidbody2D>();
         heroRigid.velocity = new Vector2(5f, heroRigid.velocity.y);
+        
+        
         //heroRigid.velocity = 5f * (heroRigid.velocity.normalized);
 
 
