@@ -12,6 +12,8 @@ namespace Assets.Classes
 
         public String bgPrefab;
         public GameObject bgObject;
+        public GameObject bgCanvas;
+
         
         public List<GameObject> bgManager;
 
@@ -26,18 +28,19 @@ namespace Assets.Classes
         }
         //private float initBgPos;
 
-        public Stage(GameObject mainUi, String bgPrefab)
+        public Stage(GameObject mainUi,GameObject bgCanvas, String bgPrefab)
         {
-            bgIncrement = 10.38f;
+            bgIncrement = 10.30f;
             this.mainUi = mainUi;
             bgManager = new List<GameObject>();
 
             this.bgPrefab = bgPrefab;
+            this.bgCanvas = bgCanvas;
 
             bgObject = ((GameObject)Resources.Load(bgPrefab));
-            bgManager.Add(MonoBehaviour.Instantiate(bgObject,mainUi.transform));
-            bgManager.Add(MonoBehaviour.Instantiate(bgObject, mainUi.transform));
-            bgManager.Add(MonoBehaviour.Instantiate(bgObject, mainUi.transform));
+            bgManager.Add(MonoBehaviour.Instantiate(bgObject,bgCanvas.transform));
+            bgManager.Add(MonoBehaviour.Instantiate(bgObject, bgCanvas.transform));
+            bgManager.Add(MonoBehaviour.Instantiate(bgObject, bgCanvas.transform));
 
             float bgloopTmpIdx = -(bgIncrement);
             foreach(GameObject g in bgManager)
@@ -91,7 +94,7 @@ namespace Assets.Classes
                 float bgloopTmpIdx = -(bgIncrement)*2;
                 foreach (GameObject g in bgManager)
                 {
-                    g.transform.SetParent(mainUi.transform, false);
+                    //g.transform.SetParent(mainUi.transform, false);
                     g.transform.position = new Vector3(g.transform.position.x + bgIncrement, g.transform.position.y, g.transform.position.z);
                     bgloopTmpIdx += bgIncrement;
                 }

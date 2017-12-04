@@ -58,7 +58,7 @@ public class GameController : MonoBehaviour {
         {
             AdvanceToNextWave();
             uiScript.stage.Finished = true;
-            newHeroPosition.x = hero.transform.position.x + 11;
+            newHeroPosition.x = hero.transform.position.x + 10.8f;
             enemyList.StartingPosition = newHeroPosition;
             heroBeingMoved = true;
             
