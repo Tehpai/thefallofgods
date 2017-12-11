@@ -6,18 +6,21 @@ using UnityEngine;
 
 public class Enemy {
 
+    //o gameobject do inimigo
     private GameObject enemy;
     public GameObject EnemyP
     {
         get { return enemy; }
         set { enemy = value; }
     }
+    //a sua vida
     private Health health;
     public Health Health
     {
         get { return health; }
         set { health = value; }
     }
+    //um indicador de se está vivo ou nao
     private bool alive;
     public bool Alive
     {
@@ -28,6 +31,7 @@ public class Enemy {
 
     public Enemy(string enemyPath)
     {
+        //inicialização de variáveis e instanciação do inimigo
         Alive = true;
         GameObject enemytmp = (GameObject)Resources.Load(enemyPath);
         
@@ -60,20 +64,12 @@ public class Enemy {
 
     public void HitEnemy()
     {
-        //Transform newHealthTrans = Health.OnHit();
-        //foreach (Transform child in enemy.GetComponentInChildren<Transform>())
-        //{
-        //    if (child != null)
-        //    {
-        //        child.transform.localScale = newHealthTrans.localScale;
-
-        //    }
-        //}
+       
        
         
     }
 
-    public void Kill()
+    public void Kill()//funcao que destroi o objeto do inimigo
     {
         MonoBehaviour.Destroy(enemy);
         Alive = false;

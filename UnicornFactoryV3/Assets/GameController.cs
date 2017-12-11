@@ -12,7 +12,9 @@ public class GameController : MonoBehaviour {
 
     public Transform debugBgTrans;
 
-    //Hero hero2;
+    int clickCount;
+
+    
 
     public UiController uiScript;
 
@@ -29,7 +31,9 @@ public class GameController : MonoBehaviour {
         difHeroCamera = new Vector3(Math.Abs(uiScript.MainCamera.transform.position.x - hero.transform.position.x), Math.Abs(uiScript.MainCamera.transform.position.y - hero.transform.position.y));
         CameraScript.difHeroCamera = difHeroCamera;
 
+        clickCount = 0;
 
+        //criar e adicionar os inimigos à lista
         enemyList = new EnemyList();
 
         enemyList.AddEnemyToScene(hero.transform.position);
@@ -54,31 +58,36 @@ public class GameController : MonoBehaviour {
     private void FixedUpdate()
     {
 
+        //se nao houver inimigos e o heroi nao tiver a ser movido
         if (enemyList.enemies.Count == 0 && !heroBeingMoved)
         {
             AdvanceToNextWave();
             uiScript.stage.Finished = true;
+            //indicação da nova posição do heroi,de modo a se ir movendo para la frame a frame
             newHeroPosition.x = hero.transform.position.x + 10.8f;
             enemyList.StartingPosition = newHeroPosition;
             heroBeingMoved = true;
             
 
         }
+        //se o heroi estiver a ser movido
         if (heroBeingMoved)
         {
             
-
+            //dar ao heroi uma velocidade constante
             Rigidbody2D heroRigid = hero.GetComponent<Rigidbody2D>();
             heroRigid.velocity = heroRigid.velocity.normalized * 5f;
-
+            
+            //se a diferença entre a posição atual e a nova posição que pertence ao heroi for pequena o suficiente, manda-se parar o heroi
             if (Math.Abs(Vector3.Distance(hero.transform.position, newHeroPosition)) > 0.5)
             {
                 
             }
             else
             {
-                //uiScript.stage.bgObjecttmp.transform.position = new Vector3(uiScript.stage.bgObjecttmp.transform.position.x + uiScript.stage.bgIncrement, uiScript.stage.bgObjecttmp.transform.position.y, uiScript.stage.bgObjecttmp.transform.position.z);
+                
 
+                //mandar parar o heroi e spawnar novo inimigos
                 heroRigid = hero.GetComponent<Rigidbody2D>();
                 heroRigid.velocity = new Vector2(0f, heroRigid.velocity.y);
                 heroBeingMoved = false;
@@ -91,14 +100,23 @@ public class GameController : MonoBehaviour {
             }
         }
             
+        if(clickCount%10 == 0 && clickCount != 0)
+        {
+            //SpriteRenderer heroSprender = hero.GetComponent<SpriteRenderer>();
+            //Sprite sp = (Sprite)Resources.Load("CharAbility");
+            hero.GetComponent<SpriteRenderer>().sprite = (Sprite)Resources.Load("CharAbility");
 
+            clickCount++;
 
+        }
 
+        //se ainda houver inimigos, quando se pressiona o rato os inimigos sao danificados
         if (enemyList.enemies.Count != 0)
         {
             if (Input.GetMouseButtonUp(0))
             {
-                enemyList.DamageEnemies(DamageTypeEnum.DamageTypes.Single_RandomTarget_Damage);
+                clickCount++;
+                enemyList.DamageEnemies(DamageTypeEnum.DamageTypes.Global_Damage);
             }
         }
     }
@@ -110,13 +128,7 @@ public class GameController : MonoBehaviour {
         heroRigid.velocity = new Vector2(5f, heroRigid.velocity.y);
         
         
-        //heroRigid.velocity = 5f * (heroRigid.velocity.normalized);
-
-
-
-        //enemyList.AddEnemyToScene();
-        //enemyList.AddEnemyToScene();
-        //enemyList.AddEnemyToScene();
+        
 
 
     }
