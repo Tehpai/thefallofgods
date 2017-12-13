@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageTypeEnum{
+public enum DamageTypeEnum{
 
-	public enum DamageTypes
-    {
+	
         Global_Damage,
         Single_RandomTarget_Damage
     };
-}

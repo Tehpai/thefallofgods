@@ -14,11 +14,14 @@ public class GameController : MonoBehaviour {
 
     int clickCount;
 
+
+
     
 
     public UiController uiScript;
 
     EnemyList enemyList;
+    HeroList heroList;
 
     Camera mainCameraController;
     Vector3 difHeroCamera;
@@ -26,6 +29,13 @@ public class GameController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
+        //excerto de debug
+
+        Formulas f = new Formulas();
+        Component dropedComp = f.GetDropsByRarity(EnemyType.Common);
+
+        //fim do excerto
 
         mainCameraController = GameObject.Find("Main Camera").GetComponent<Camera>();
         difHeroCamera = new Vector3(Math.Abs(uiScript.MainCamera.transform.position.x - hero.transform.position.x), Math.Abs(uiScript.MainCamera.transform.position.y - hero.transform.position.y));
@@ -116,7 +126,7 @@ public class GameController : MonoBehaviour {
             if (Input.GetMouseButtonUp(0))
             {
                 clickCount++;
-                enemyList.DamageEnemies(DamageTypeEnum.DamageTypes.Global_Damage);
+                enemyList.DamageEnemies(DamageTypeEnum.Global_Damage);
             }
         }
     }

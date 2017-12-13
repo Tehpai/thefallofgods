@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class Hero : Enemy {
 
-	public Hero() : base("enemy prefab")
+	public Hero() : base("sampleHero")
     {
 
     }
+
+    public void useSkill()
+    {
+        SpriteRenderer EnemySprender = EnemyP.GetComponent<SpriteRenderer>();
+        EnemySprender.sprite = (Sprite)Resources.Load("CharAbility");
+    }
+
+
 }

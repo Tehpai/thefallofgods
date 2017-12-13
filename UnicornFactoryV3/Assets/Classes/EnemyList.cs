@@ -88,9 +88,9 @@ public class EnemyList
         PositionEnemies();
     }
 
-    public void DamageEnemies(DamageTypeEnum.DamageTypes enumDamage)
+    public void DamageEnemies(DamageTypeEnum enumDamage)
     {
-        if (enumDamage == DamageTypeEnum.DamageTypes.Global_Damage)
+        if (enumDamage == DamageTypeEnum.Global_Damage)
         {
 
             foreach (Enemy e in enemies)
@@ -120,7 +120,7 @@ public class EnemyList
 
         }
         else
-            if (enumDamage == DamageTypeEnum.DamageTypes.Single_RandomTarget_Damage)
+            if (enumDamage == DamageTypeEnum.Single_RandomTarget_Damage)
         {
             
             int randEnemyidx = UnityEngine.Random.Range(0, enemies.Count);
