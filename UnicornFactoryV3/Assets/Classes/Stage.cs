@@ -11,10 +11,12 @@ namespace Assets.Classes
     {
         public Canvas bgCanvas;
 
-        public String bgPrefab;
-        public GameObject bgObject;
-        
-        public List<GameObject> bgManager;
+        public String bgPrefab; //a string do nome do prefab do background
+        public GameObject bgObject; // o gameObject do background
+        public GameObject bgCanvas; // o gameObject do ui principal
+
+
+        public List<GameObject> bgManager; //uma lista de backgrounds para dar o efeito de movimento
 
         public float bgIncrement;
         //GameObject stageUi;
@@ -27,21 +29,31 @@ namespace Assets.Classes
         }
         //private float initBgPos;
 
-        public Stage(GameObject mainUi, String bgPrefab)
+        public Stage(GameObject mainUi,GameObject bgCanvas, String bgPrefab) // inicializa as variáveis e instancia o primeiro conjunto de inimigos
         {
-            bgIncrement = 10.38f;
+            //o bgIncrement é uma variavel predefinida para saber onde o proximo bg deve ser spawnado
+            bgIncrement = 10.30f;
             this.mainUi = mainUi;
             bgManager = new List<GameObject>();
 
             this.bgPrefab = bgPrefab;
+            this.bgCanvas = bgCanvas;
+            
+            //instanciacao de inimigos
 
             bgObject = ((GameObject)Resources.Load(bgPrefab));
+<<<<<<< HEAD
             Canvas bgCanvas = mainUi.GetComponent<Canvas>();
 
             bgManager.Add(MonoBehaviour.Instantiate(bgObject, bgCanvas.transform));
+=======
+            bgManager.Add(MonoBehaviour.Instantiate(bgObject,bgCanvas.transform));
+>>>>>>> 910fb9f8537b5276d9a7531bfcca726844a54f20
             bgManager.Add(MonoBehaviour.Instantiate(bgObject, bgCanvas.transform));
             bgManager.Add(MonoBehaviour.Instantiate(bgObject, bgCanvas.transform));
 
+
+            //posicionamento dos backgrounds
             float bgloopTmpIdx = -(bgIncrement);
             foreach(GameObject g in bgManager)
             {
@@ -53,28 +65,14 @@ namespace Assets.Classes
            
 
 
-            
-            //bgManager[1].transform.position = new Vector3(bgObjecttmp.transform.position.x + bgIncrement, bgObjecttmp.transform.position.y, bgObjecttmp.transform.position.z);
-
-
-            //foreach (SpriteRenderer sprender in mainUi.GetComponentsInChildren<SpriteRenderer>())
-            //{
-            //    if (sprender.name == "background2")
-            //    {
-            //        bgSprender = sprender;
-            //        initBgPos = bgSprender.transform.position.x;
-
-
-
-            //    }
-
-            //}
+          
         }
 
-        public void NextRound()
+        public void NextRound() //funcao que avança à proxima ronda (stage)
         {
             Text stage = null;
             
+            //por o numero do stage no objeto correspondente
             foreach (Text g in mainUi.GetComponentsInChildren<Text>())
             {
                 if (g.name == "Stage")
@@ -88,13 +86,14 @@ namespace Assets.Classes
                 
                 stage.text = (int.Parse(stage.text) + 1).ToString();
 
-                //GameObject bg2 = MonoBehaviour.Instantiate((GameObject)Resources.Load("background2"));
+                
 
 
+                //posicionar os backgrounds de novo,agora que o heroi vai avançar à proxima ronda
                 float bgloopTmpIdx = -(bgIncrement)*2;
                 foreach (GameObject g in bgManager)
                 {
-                    g.transform.SetParent(mainUi.transform, false);
+                   
                     g.transform.position = new Vector3(g.transform.position.x + bgIncrement, g.transform.position.y, g.transform.position.z);
                     bgloopTmpIdx += bgIncrement;
                 }

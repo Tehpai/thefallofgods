@@ -9,6 +9,8 @@ public class UiController : MonoBehaviour
 {
 
     public GameObject mainUi;
+    public GameObject bgCanvas;
+
     public Stage stage;
     public Camera MainCamera;
 
@@ -20,7 +22,7 @@ public class UiController : MonoBehaviour
     void Start()
     {
         stageCount = 1;
-        stage = new Stage(mainUi, "backgroundf");
+        stage = new Stage(mainUi,bgCanvas, "backgroundf");
 
     }
 
