@@ -9,6 +9,7 @@ namespace Assets.Classes
 {
     public class Stage
     {
+        public Canvas bgCanvas;
 
         public String bgPrefab;
         public GameObject bgObject;
@@ -35,9 +36,11 @@ namespace Assets.Classes
             this.bgPrefab = bgPrefab;
 
             bgObject = ((GameObject)Resources.Load(bgPrefab));
-            bgManager.Add(MonoBehaviour.Instantiate(bgObject,mainUi.transform));
-            bgManager.Add(MonoBehaviour.Instantiate(bgObject, mainUi.transform));
-            bgManager.Add(MonoBehaviour.Instantiate(bgObject, mainUi.transform));
+            Canvas bgCanvas = mainUi.GetComponent<Canvas>();
+
+            bgManager.Add(MonoBehaviour.Instantiate(bgObject, bgCanvas.transform));
+            bgManager.Add(MonoBehaviour.Instantiate(bgObject, bgCanvas.transform));
+            bgManager.Add(MonoBehaviour.Instantiate(bgObject, bgCanvas.transform));
 
             float bgloopTmpIdx = -(bgIncrement);
             foreach(GameObject g in bgManager)
