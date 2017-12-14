@@ -1,0 +1,3 @@
+Cria a merda da lista de herois, e ve se da para fazer uma lista de entidades genéricas para depois fazer as putas das subclasses enemy e hero
+dps vai ao gamecontroller.cs e adapta e classe hero para ter uma barra de vida funcional
+dps dessa merda toda,que já e bastante, ainda tens de fazer as formulas basicas de combate e scalability da vida dos inimigos (uma sugestao o cabrao: mete os inimigos com 25% mais de vida após cada stage)
