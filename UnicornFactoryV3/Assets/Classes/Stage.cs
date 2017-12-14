@@ -9,10 +9,11 @@ namespace Assets.Classes
 {
     public class Stage
     {
+        public Canvas bgCanvas;
 
         public String bgPrefab; //a string do nome do prefab do background
         public GameObject bgObject; // o gameObject do background
-        public GameObject bgCanvas; // o gameObject do ui principal
+        //public GameObject bgCanvas; // o gameObject do ui principal
 
 
         public List<GameObject> bgManager; //uma lista de backgrounds para dar o efeito de movimento
@@ -28,7 +29,7 @@ namespace Assets.Classes
         }
         //private float initBgPos;
 
-        public Stage(GameObject mainUi,GameObject bgCanvas, String bgPrefab) // inicializa as variáveis e instancia o primeiro conjunto de inimigos
+        public Stage(GameObject mainUi,Canvas bgCanvas, String bgPrefab) // inicializa as variáveis e instancia o primeiro conjunto de inimigos
         {
             //o bgIncrement é uma variavel predefinida para saber onde o proximo bg deve ser spawnado
             bgIncrement = 10.30f;
@@ -36,12 +37,20 @@ namespace Assets.Classes
             bgManager = new List<GameObject>();
 
             this.bgPrefab = bgPrefab;
-            this.bgCanvas = bgCanvas;
+            //this.bgCanvas = bgCanvas;
             
             //instanciacao de inimigos
 
             bgObject = ((GameObject)Resources.Load(bgPrefab));
+<<<<<<< HEAD
+
+            bgCanvas = mainUi.GetComponent<Canvas>();
+
+            bgManager.Add(MonoBehaviour.Instantiate(bgObject, bgCanvas.transform));
             bgManager.Add(MonoBehaviour.Instantiate(bgObject,bgCanvas.transform));
+
+=======
+>>>>>>> 4d59847f560c09d5e30120587296c26430fb0fd7
             bgManager.Add(MonoBehaviour.Instantiate(bgObject, bgCanvas.transform));
             bgManager.Add(MonoBehaviour.Instantiate(bgObject, bgCanvas.transform));
 
