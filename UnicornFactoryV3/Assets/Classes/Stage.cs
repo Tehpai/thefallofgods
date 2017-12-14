@@ -9,7 +9,6 @@ namespace Assets.Classes
 {
     public class Stage
     {
-        public Canvas bgCanvas;
 
         public String bgPrefab; //a string do nome do prefab do background
         public GameObject bgObject; // o gameObject do background
@@ -42,13 +41,7 @@ namespace Assets.Classes
             //instanciacao de inimigos
 
             bgObject = ((GameObject)Resources.Load(bgPrefab));
-<<<<<<< HEAD
-            Canvas bgCanvas = mainUi.GetComponent<Canvas>();
-
-            bgManager.Add(MonoBehaviour.Instantiate(bgObject, bgCanvas.transform));
-=======
             bgManager.Add(MonoBehaviour.Instantiate(bgObject,bgCanvas.transform));
->>>>>>> 910fb9f8537b5276d9a7531bfcca726844a54f20
             bgManager.Add(MonoBehaviour.Instantiate(bgObject, bgCanvas.transform));
             bgManager.Add(MonoBehaviour.Instantiate(bgObject, bgCanvas.transform));
 
