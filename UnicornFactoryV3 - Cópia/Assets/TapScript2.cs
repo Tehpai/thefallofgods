@@ -11,7 +11,7 @@ public class TapScript2 : MonoBehaviour {
     int health;
     //Text tmptxt;
     List<Health> hp;
-    List<Enemy> enemies2 = new List<Enemy>(); // new instance of enemy
+    List<Entity> enemies2 = new List<Entity>(); // new instance of enemy
 
     // Use this for initialization
     void Start()
@@ -21,7 +21,7 @@ public class TapScript2 : MonoBehaviour {
 
 
 
-        enemies2.Add(new Enemy("enemy prefab"));
+        enemies2.Add(new Entity("enemy prefab"));
 
 
 
@@ -41,7 +41,7 @@ public class TapScript2 : MonoBehaviour {
 
 
         //int cnt = 0;
-        foreach (Enemy en in enemies2)
+        foreach (Entity en in enemies2)
         {
 
 

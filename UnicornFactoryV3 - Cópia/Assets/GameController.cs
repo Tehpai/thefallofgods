@@ -20,7 +20,7 @@ public class GameController : MonoBehaviour {
 
     public UiController uiScript;
 
-    EnemyList enemyList;
+    EntityList enemyList;
     HeroList heroList;
 
     Camera mainCameraController;
@@ -50,7 +50,7 @@ public class GameController : MonoBehaviour {
         clickCount = 0;
 
         //criar e adicionar os inimigos à lista
-        enemyList = new EnemyList();
+        enemyList = new EntityList();
 
         enemyList.AddEnemyToScene(hero.transform.position);
         enemyList.AddEnemyToScene(hero.transform.position);
@@ -75,7 +75,7 @@ public class GameController : MonoBehaviour {
     {
 
         //se nao houver inimigos e o heroi nao tiver a ser movido
-        if (enemyList.enemies.Count == 0 && !heroBeingMoved)
+        if (enemyList.entities.Count == 0 && !heroBeingMoved)
         {
             AdvanceToNextWave();
             uiScript.stage.Finished = true;
@@ -132,7 +132,7 @@ public class GameController : MonoBehaviour {
         }
 
         //se ainda houver inimigos, quando se pressiona o rato os inimigos sao danificados
-        if (enemyList.enemies.Count != 0)
+        if (enemyList.entities.Count != 0)
         {
             if (Input.GetMouseButtonUp(0))
             {
