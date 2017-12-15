@@ -27,7 +27,9 @@ public class Formulas {
             {
                 if(new System.Random().Next(1,100) <= 5) // representa uma chance de 5% imbutida num booleano
                 {
+                    Debug.Log(s + "dropado");
                     return new Component(s);
+                    
                 }
             }
             

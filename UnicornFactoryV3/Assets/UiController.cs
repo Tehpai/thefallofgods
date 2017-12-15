@@ -9,12 +9,12 @@ public class UiController : MonoBehaviour
 {
 
     public GameObject mainUi;
-    public GameObject bgCanvas;
+    public Canvas bgCanvas;
 
     public Stage stage;
     public Camera MainCamera;
 
-    public String bgPrefab;
+    String bgPrefab;
 
     public int stageCount;
 

@@ -33,7 +33,13 @@ public class GameController : MonoBehaviour {
         //excerto de debug
 
         Formulas f = new Formulas();
-        Component dropedComp = f.GetDropsByRarity(EnemyType.Common);
+
+        Component dropedComp;
+        do
+        {
+            dropedComp = f.GetDropsByRarity(EnemyType.Common);
+        } while (dropedComp == null);
+        
 
         //fim do excerto
 
@@ -114,7 +120,12 @@ public class GameController : MonoBehaviour {
         {
             //SpriteRenderer heroSprender = hero.GetComponent<SpriteRenderer>();
             //Sprite sp = (Sprite)Resources.Load("CharAbility");
-            hero.GetComponent<SpriteRenderer>().sprite = (Sprite)Resources.Load("CharAbility");
+            //hero.GetComponent<SpriteRenderer>().sprite = (Sprite)Resources.Load("CharAbility");
+            SpriteRenderer s = hero.GetComponent<SpriteRenderer>();
+            Sprite spritetemp = new Sprite();
+
+
+            s.sprite = (Sprite)Resources.Load<Sprite>("CharAbility");
 
             clickCount++;
 
