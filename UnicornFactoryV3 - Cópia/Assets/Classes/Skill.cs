@@ -5,8 +5,14 @@ using System.Text;
 
 namespace Assets.Classes
 {
-    class Skill
+    public class Skill
     {
+        String name;//o nome do skill
+        String Name
+        {
+            get;
+            set;
+        }
         int cost; // o custo do skill em orbs
         int Cost
         {
