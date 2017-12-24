@@ -6,6 +6,8 @@ using UnityEngine;
 public class Hero : Entity {
 
     List<Skill> skills;
+   
+
 
 	public Hero(string prefabPath) : base(prefabPath)
     {
