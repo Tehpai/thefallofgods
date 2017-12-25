@@ -14,10 +14,10 @@ public class GameController : MonoBehaviour {
 
     int clickCount;
 
+    
 
 
-
-
+    
     
 
     public UiController uiScript;
@@ -31,6 +31,9 @@ public class GameController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
+        // AnisotropicFiltering.Enable;
+        Resolution r = Screen.currentResolution;
 
         //excerto de debug
 
