@@ -1,0 +1,14 @@
+Cria a merda da lista de herois, e ve se da para fazer uma lista de entidades genéricas para depois fazer as putas das subclasses enemy e hero
+dps vai ao gamecontroller.cs e adapta e classe hero para ter uma barra de vida funcional
+dps dessa merda toda,que já e bastante, ainda tens de fazer as formulas basicas de combate e scalability da vida dos inimigos (uma sugestao o cabrao: mete os inimigos com 25% mais de vida após cada stage)
+
+
+15-12-2017:
+fodasse tas um lazy do caralho,mas agora vamos ver o que é que o vessel deverá ter em codigo na puta do skill do deus
+
+-primeiramente,executar uma animação enquanto faz o skill ou dá charge (criar funções separadas)
+-caso faça charge, executa-se só a animação ao final de um certo tempo (nao sei fazer esta merda crl tenho q ir pesquisar)
+-dependendo do skill,enquanto é feita a animação é executado o código de damage aos inimigos
+
+
+-na classe deus, é preciso dar um revamp aos stats em termos de fórmulas,e talvez criar também alguma mecânica de anti-ataque até algo ser sucedido na fight

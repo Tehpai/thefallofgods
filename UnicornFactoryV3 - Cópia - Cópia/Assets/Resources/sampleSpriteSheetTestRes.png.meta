@@ -1,0 +1,1048 @@
+fileFormatVersion: 2
+guid: 557181d11d923884381bd5a96a78d339
+timeCreated: 1513305908
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sampleSpriteSheetTestRes_0
+    21300002: sampleSpriteSheetTestRes_1
+    21300004: sampleSpriteSheetTestRes_2
+    21300006: sampleSpriteSheetTestRes_3
+    21300008: sampleSpriteSheetTestRes_4
+    21300010: sampleSpriteSheetTestRes_5
+    21300012: sampleSpriteSheetTestRes_6
+    21300014: sampleSpriteSheetTestRes_7
+    21300016: sampleSpriteSheetTestRes_8
+    21300018: sampleSpriteSheetTestRes_9
+    21300020: sampleSpriteSheetTestRes_10
+    21300022: sampleSpriteSheetTestRes_11
+    21300024: sampleSpriteSheetTestRes_12
+    21300026: sampleSpriteSheetTestRes_13
+    21300028: sampleSpriteSheetTestRes_14
+    21300030: sampleSpriteSheetTestRes_15
+    21300032: sampleSpriteSheetTestRes_16
+    21300034: sampleSpriteSheetTestRes_17
+    21300036: sampleSpriteSheetTestRes_18
+    21300038: sampleSpriteSheetTestRes_19
+    21300040: sampleSpriteSheetTestRes_20
+    21300042: sampleSpriteSheetTestRes_21
+    21300044: sampleSpriteSheetTestRes_22
+    21300046: sampleSpriteSheetTestRes_23
+    21300048: sampleSpriteSheetTestRes_24
+    21300050: sampleSpriteSheetTestRes_25
+    21300052: sampleSpriteSheetTestRes_26
+    21300054: sampleSpriteSheetTestRes_27
+    21300056: sampleSpriteSheetTestRes_28
+    21300058: sampleSpriteSheetTestRes_29
+    21300060: sampleSpriteSheetTestRes_30
+    21300062: sampleSpriteSheetTestRes_31
+    21300064: sampleSpriteSheetTestRes_32
+    21300066: sampleSpriteSheetTestRes_33
+    21300068: sampleSpriteSheetTestRes_34
+    21300070: sampleSpriteSheetTestRes_35
+    21300072: sampleSpriteSheetTestRes_36
+    21300074: sampleSpriteSheetTestRes_37
+    21300076: sampleSpriteSheetTestRes_38
+    21300078: sampleSpriteSheetTestRes_39
+    21300080: sampleSpriteSheetTestRes_40
+    21300082: sampleSpriteSheetTestRes_41
+    21300084: sampleSpriteSheetTestRes_42
+    21300086: sampleSpriteSheetTestRes_43
+    21300088: sampleSpriteSheetTestRes_44
+    21300090: sampleSpriteSheetTestRes_45
+    21300092: sampleSpriteSheetTestRes_46
+    21300094: sampleSpriteSheetTestRes_47
+    21300096: sampleSpriteSheetTestRes_48
+    21300098: sampleSpriteSheetTestRes_49
+    21300100: sampleSpriteSheetTestRes_50
+    21300102: sampleSpriteSheetTestRes_51
+    21300104: sampleSpriteSheetTestRes_52
+    21300106: sampleSpriteSheetTestRes_53
+    21300108: sampleSpriteSheetTestRes_54
+    21300110: sampleSpriteSheetTestRes_55
+    21300112: sampleSpriteSheetTestRes_56
+    21300114: sampleSpriteSheetTestRes_57
+    21300116: sampleSpriteSheetTestRes_58
+    21300118: sampleSpriteSheetTestRes_59
+    21300120: sampleSpriteSheetTestRes_60
+    21300122: sampleSpriteSheetTestRes_61
+    21300124: sampleSpriteSheetTestRes_62
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3925
+        width: 690
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_1
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 3925
+        width: 692
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_2
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 3916
+        width: 644
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_3
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 3916
+        width: 644
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_4
+      rect:
+        serializedVersion: 2
+        x: 2939
+        y: 3911
+        width: 511
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_5
+      rect:
+        serializedVersion: 2
+        x: 3648
+        y: 3911
+        width: 511
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_6
+      rect:
+        serializedVersion: 2
+        x: 4399
+        y: 3911
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_7
+      rect:
+        serializedVersion: 2
+        x: 5107
+        y: 3911
+        width: 468
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_8
+      rect:
+        serializedVersion: 2
+        x: 5850
+        y: 3907
+        width: 434
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_9
+      rect:
+        serializedVersion: 2
+        x: 6560
+        y: 3907
+        width: 434
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_10
+      rect:
+        serializedVersion: 2
+        x: 7153
+        y: 3907
+        width: 627
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_11
+      rect:
+        serializedVersion: 2
+        x: 7862
+        y: 3907
+        width: 628
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_12
+      rect:
+        serializedVersion: 2
+        x: 8795
+        y: 0
+        width: 11
+        height: 4567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_13
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 3249
+        width: 666
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_14
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 3249
+        width: 667
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_15
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 3275
+        width: 648
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_16
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 3275
+        width: 648
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_17
+      rect:
+        serializedVersion: 2
+        x: 2918
+        y: 3275
+        width: 614
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_18
+      rect:
+        serializedVersion: 2
+        x: 3627
+        y: 3275
+        width: 614
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_19
+      rect:
+        serializedVersion: 2
+        x: 4408
+        y: 3249
+        width: 515
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_20
+      rect:
+        serializedVersion: 2
+        x: 5116
+        y: 3249
+        width: 515
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_21
+      rect:
+        serializedVersion: 2
+        x: 5868
+        y: 3249
+        width: 425
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_22
+      rect:
+        serializedVersion: 2
+        x: 6577
+        y: 3249
+        width: 425
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_23
+      rect:
+        serializedVersion: 2
+        x: 7226
+        y: 3249
+        width: 477
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_24
+      rect:
+        serializedVersion: 2
+        x: 7935
+        y: 3249
+        width: 477
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_25
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2591
+        width: 630
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_26
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 2591
+        width: 631
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_27
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 2621
+        width: 647
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_28
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 2621
+        width: 647
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_29
+      rect:
+        serializedVersion: 2
+        x: 2918
+        y: 2617
+        width: 614
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_30
+      rect:
+        serializedVersion: 2
+        x: 3627
+        y: 2617
+        width: 614
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_31
+      rect:
+        serializedVersion: 2
+        x: 4276
+        y: 2157
+        width: 645
+        height: 937
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_32
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 2157
+        width: 647
+        height: 937
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_33
+      rect:
+        serializedVersion: 2
+        x: 5889
+        y: 2600
+        width: 404
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_34
+      rect:
+        serializedVersion: 2
+        x: 6598
+        y: 2600
+        width: 404
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_35
+      rect:
+        serializedVersion: 2
+        x: 7218
+        y: 2600
+        width: 532
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_36
+      rect:
+        serializedVersion: 2
+        x: 7927
+        y: 2600
+        width: 532
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_37
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 2032
+        width: 606
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_38
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 2032
+        width: 606
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_39
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 2101
+        width: 640
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_40
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 2101
+        width: 640
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_41
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 2144
+        width: 657
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_42
+      rect:
+        serializedVersion: 2
+        x: 3558
+        y: 2144
+        width: 657
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_43
+      rect:
+        serializedVersion: 2
+        x: 5731
+        y: 2122
+        width: 617
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_44
+      rect:
+        serializedVersion: 2
+        x: 6440
+        y: 2122
+        width: 618
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_45
+      rect:
+        serializedVersion: 2
+        x: 7209
+        y: 2075
+        width: 537
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_46
+      rect:
+        serializedVersion: 2
+        x: 7918
+        y: 2075
+        width: 537
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_47
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1417
+        width: 545
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_48
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1417
+        width: 546
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_49
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 1387
+        width: 566
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_50
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 1387
+        width: 565
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_51
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 1331
+        width: 601
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_52
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1331
+        width: 601
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_53
+      rect:
+        serializedVersion: 2
+        x: 4339
+        y: 1284
+        width: 526
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_54
+      rect:
+        serializedVersion: 2
+        x: 5047
+        y: 1284
+        width: 528
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_55
+      rect:
+        serializedVersion: 2
+        x: 5859
+        y: 1284
+        width: 425
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_56
+      rect:
+        serializedVersion: 2
+        x: 6568
+        y: 1284
+        width: 426
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_57
+      rect:
+        serializedVersion: 2
+        x: 7308
+        y: 1284
+        width: 395
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_58
+      rect:
+        serializedVersion: 2
+        x: 8017
+        y: 1284
+        width: 395
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_59
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 626
+        width: 395
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_60
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 626
+        width: 395
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_61
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 617
+        width: 556
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sampleSpriteSheetTestRes_62
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 617
+        width: 556
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
